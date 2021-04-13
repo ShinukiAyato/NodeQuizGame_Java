@@ -26,6 +26,7 @@ public class Level2 {
 
     public void decider() {
         if(list.size() == 5){
+            System.out.print("\f");
             Level3 lvl3 = new Level3();
             lvl3.Level3(level1score, scores);
         } else {

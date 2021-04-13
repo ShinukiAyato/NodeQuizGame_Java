@@ -37,6 +37,7 @@ public class Level1 {
 
     public void decider() {
         if(list.size() == 10){
+            System.out.print("\f");
             Level2 lvl2 = new Level2();
             lvl2.Level2(scores);
         } else {
