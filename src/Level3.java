@@ -153,10 +153,12 @@ public class Level3 {
             pass();
         }
         else {
-            System.out.println("When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.\n" +
-                    "\n" +
-                    "But as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all.\n" +
-                    "\n");
+            System.out.println("""
+                    When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.
+
+                    But as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all.
+
+                    """);
             fail();
         }
     }
