@@ -27,8 +27,8 @@ public class Level1 {
         System.out.println("Press Enter Key to Continue");
         String blank = scan.nextLine();
         System.out.print("\f");
-        System.out.println("༻✦༺ ༻✧༺  ༻✦༺  ༻❉༺  ༻✦༺  ༻✧༺༻✦༺");
-        System.out.println("            Level 1 Begins");
+        System.out.println("༻✦༺ ༻✧༺  ༻✦༺  ༻❉༺  ༻✦༺  ༻✧༺ ༻✦༺");
+        System.out.println("\t\t\tLevel 1 Begins");
         System.out.println(". ⋅ ˚̣- :- : ✧ : – ⭒ ⊹ ⭒ – : ✧ : -: -˚̣⋅ .");
         System.out.println("Press Enter Key to Begin level 1");
         String blank1 = scan.nextLine();
@@ -288,7 +288,7 @@ public class Level1 {
     }
 
     public void q10() {
-        System.out.println("How to write an IF statement in JavaScript??\n");
+        System.out.println("How to write an IF statement in JavaScript?\n");
         System.out.println("⊱ ──────────── {.⋅ ✯ ⋅.} ──────────── ⊰");
         System.out.println("『A』 if i == 0 then");
         System.out.println("『B』 if i = 0 then");

@@ -19,8 +19,6 @@ public class Level2 {
         System.out.println("༻✦༺ ༻✧༺  ༻✦༺  ༻❉༺  ༻✦༺  ༻✧༺༻✦༺");
         System.out.println("            Level 2 Begins");
         System.out.println(". ⋅ ˚̣- :- : ✧ : – ⭒ ⊹ ⭒ – : ✧ : -: -˚̣⋅ .");
-        System.out.println("Press Enter Key to Begin Level 2");
-        String blank = scan.nextLine();
         decider();
     }
 

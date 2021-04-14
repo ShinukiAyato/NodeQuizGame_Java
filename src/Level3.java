@@ -18,7 +18,6 @@ public class Level3 {
         System.out.println("╚═════════════ ∘◦ ❉ ◦∘ ══════════════╝");
         System.out.println("Press Enter Key to Continue");
         String blank1 = scan.nextLine();
-        System.out.print("\f");
         System.out.println("༻✦༺ ༻✧༺  ༻✦༺  ༻❉༺  ༻✦༺  ༻✧༺༻✦༺");
         System.out.println("            Level 3 Begins");
         System.out.println(". ⋅ ˚̣- :- : ✧ : – ⭒ ⊹ ⭒ – : ✧ : -: -˚̣⋅ .");
@@ -29,7 +28,6 @@ public class Level3 {
 
     public void decider() {
         if(list.size() == 5){
-            System.out.print("\f");
             level3score = scores * 15;
             System.out.println("╔═════════════ ∘◦ ☆ ◦∘ ══════════════╗");
             System.out.println("Your score in level 1 is " + level1score + "/50");
@@ -37,8 +35,6 @@ public class Level3 {
             System.out.println("Your score in level 3 is " + level3score + "/75");
             System.out.println("Your score in Total Score is " + (level1score + level2score + level3score) + "/175");
             System.out.println("╚═════════════ ∘◦ ❉ ◦∘ ══════════════╝");
-            System.out.println("Press Enter Key to Continue");
-            String blank = scan.nextLine();
             Main main = new Main();
             main.decision();
 
@@ -49,23 +45,18 @@ public class Level3 {
                     list.add(randomize);
                     switch (randomize) {
                         case "q1" -> {
-                            System.out.print("\f");
                             q1();
                         }
                         case "q2" -> {
-                            System.out.print("\f");
                             q2();
                         }
                         case "q3" -> {
-                            System.out.print("\f");
                             q3();
                         }
                         case "q4" -> {
-                            System.out.print("\f");
                             q4();
                         }
                         case "q5" -> {
-                            System.out.print("\f");
                             q5();
                         }
                     }
