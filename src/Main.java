@@ -9,10 +9,9 @@ public class Main  {
     }
 
     public void decision(){
-        System.out.print("\f");
-        System.out.println("╔═════════════ ∘◦ ☆ ◦∘ ══════════════╗");
-        System.out.println("Do You want to Restart or Quit the game? ");
-        System.out.println("╚═════════════ ∘◦ ❉ ◦∘ ══════════════╝");
+        System.out.println("╔══════════════════ ∘◦ ☆ ◦∘ ═══════════════════╗");
+        System.out.println("\tDo You want to Restart or Quit the game? ");
+        System.out.println("╚══════════════════ ∘◦ ❉ ◦∘ ═══════════════════╝");
         System.out.println("Type R to Restart the Game and any key to leave");
         System.out.print("╰┈➤");
         String answer = scan.nextLine();

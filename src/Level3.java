@@ -11,30 +11,28 @@ public class Level3 {
     public void Level3(int level1, int level2) {
         level1score = level1;
         level2score = level2 * 10;
-        System.out.println("╔═════════════ ∘◦ ☆ ◦∘ ══════════════╗");
-        System.out.println("Your score in level 1 is " + level1score + "/50");
-        System.out.println("Your score in level 2 is " + level2score + "/50");
-        System.out.println("Your score in Total Score is " + (level1score + level2score) + "/100");
-        System.out.println("╚═════════════ ∘◦ ❉ ◦∘ ══════════════╝");
+        System.out.println("╔══════════════════ ∘◦ ☆ ◦∘ ═══════════════════╗");
+        System.out.println("\t\t Your score in level 1 is " + level1score + "/50");
+        System.out.println("\t\t Your score in level 2 is " + level2score + "/50");
+        System.out.println("\t   Your score in Total Score is " + (level1score + level2score) + "/100");
+        System.out.println("╚══════════════════ ∘◦ ❉ ◦∘ ═══════════════════╝");
         System.out.println("Press Enter Key to Continue");
         String blank1 = scan.nextLine();
-        System.out.println("༻✦༺ ༻✧༺  ༻✦༺  ༻❉༺  ༻✦༺  ༻✧༺༻✦༺");
-        System.out.println("            Level 3 Begins");
-        System.out.println(". ⋅ ˚̣- :- : ✧ : – ⭒ ⊹ ⭒ – : ✧ : -: -˚̣⋅ .");
-        System.out.println("Press Enter Key to Begin Level 3");
-        String blank = scan.nextLine();
+        System.out.println("༻✦༺   ༻✧༺   ༻✦༺   ༻❉༺   ༻✦༺   ༻✧༺   ༻✦༺");
+        System.out.println("\t\t\t\tLevel 3 Begins");
+        System.out.println(". ⋅ ˚̣- :- : ✧ : – : – ⭒ ⊹ ⭒ – : – : ✧ : -: -˚̣⋅ .");
         decider();
     }
 
     public void decider() {
         if(list.size() == 5){
             level3score = scores * 15;
-            System.out.println("╔═════════════ ∘◦ ☆ ◦∘ ══════════════╗");
-            System.out.println("Your score in level 1 is " + level1score + "/50");
-            System.out.println("Your score in level 2 is " + level2score + "/50");
-            System.out.println("Your score in level 3 is " + level3score + "/75");
-            System.out.println("Your score in Total Score is " + (level1score + level2score + level3score) + "/175");
-            System.out.println("╚═════════════ ∘◦ ❉ ◦∘ ══════════════╝");
+            System.out.println("╔══════════════════ ∘◦ ☆ ◦∘ ═══════════════════╗");
+            System.out.println("\t\t Your score in level 1 is " + level1score + "/50");
+            System.out.println("\t\t Your score in level 2 is " + level2score + "/50");
+            System.out.println("\t\t Your score in level 3 is " + level3score + "/75");
+            System.out.println("\t   Your score in Total Score is " + (level1score + level2score + level3score) + "/175");
+            System.out.println("╚══════════════════ ∘◦ ❉ ◦∘ ═══════════════════╝");
             Main main = new Main();
             main.decision();
 
@@ -66,82 +64,82 @@ public class Level3 {
     }
 
     public void q1() {
-        System.out.println("⊱ ──────────── {.⋅ ✯ ⋅.} ──────────── ⊰");
-        System.out.println("『What kind of Language is Javascript?』");
-        System.out.println("⊱ ──────────── {⋅. ✯ .⋅} ──────────── ⊰");
+        System.out.println("⊱ ────────────────────── {.⋅ ✯ ⋅.} ────────────────────── ⊰");
+        System.out.println("\t\t  What kind of Language is Javascript?");
+        System.out.println("⊱ ────────────────────── {⋅. ✯ .⋅} ────────────────────── ⊰");
         System.out.print("╰┈➤");
         String answer = scan.nextLine();
         answer = answer.toLowerCase();
         if(answer.contains("script")){
             scores++;
-            pass();
+            correct_answer();
         }
         else {
             System.out.println("JavaScript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages.");
-            fail();
+            wrong_answer();
         }
     }
 
     public void q2() {
-        System.out.println("⊱ ──────────── {.⋅ ✯ ⋅.} ──────────── ⊰");
+        System.out.println("⊱ ────────────────────── {.⋅ ✯ ⋅.} ────────────────────── ⊰");
         System.out.println("What is the full name of the package manager of JavaScript?");
-        System.out.println("⊱ ──────────── {⋅. ✯ .⋅} ──────────── ⊰");
+        System.out.println("⊱ ────────────────────── {⋅. ✯ .⋅} ────────────────────── ⊰");
         System.out.print("╰┈➤");
         String answer = scan.nextLine();
         answer = answer.toLowerCase();
         if(answer.contains("node") & answer.contains("package") & answer.contains("manager")){
             scores++;
-            pass();
+            correct_answer();
         }
         else {
             System.out.println("The full name of the package manager is Node Package Manager (npm).");
-            fail();
+            wrong_answer();
         }
     }
 
     public void q3() {
-        System.out.println("⊱ ──────────── {.⋅ ✯ ⋅.} ──────────── ⊰");
-        System.out.println("What Language was Javascript based of?");
-        System.out.println("⊱ ──────────── {⋅. ✯ .⋅} ──────────── ⊰");
+        System.out.println("⊱ ────────────────────── {.⋅ ✯ ⋅.} ────────────────────── ⊰");
+        System.out.println("\t\t What Language was Javascript based of?");
+        System.out.println("⊱ ────────────────────── {⋅. ✯ .⋅} ────────────────────── ⊰");
         System.out.print("╰┈➤");
         String answer = scan.nextLine();
         answer = answer.toLowerCase();
         if(answer.contains("ecmascript")){
             scores++;
-            pass();
+            correct_answer();
         }
         else {
             System.out.println("Javascript was based on ECMAScript a scripting language developer by Sun Microsystems.");
-            fail();
+            wrong_answer();
         }
     }
 
     public void q4() {
-        System.out.println("⊱ ──────────── {.⋅ ✯ ⋅.} ──────────── ⊰");
-        System.out.println("Where is the trademark of Javascript in US?");
-        System.out.println("⊱ ──────────── {⋅. ✯ .⋅} ──────────── ⊰");
+        System.out.println("⊱ ────────────────────── {.⋅ ✯ ⋅.} ────────────────────── ⊰");
+        System.out.println("\t   Where is the trademark of Javascript in US?");
+        System.out.println("⊱ ────────────────────── {⋅. ✯ .⋅} ────────────────────── ⊰");
         System.out.print("╰┈➤");
         String answer = scan.nextLine();
         answer = answer.toLowerCase();
         if(answer.contains("oracle") & answer.contains("corporation")){
             scores++;
-            pass();
+            correct_answer();
         }
         else {
             System.out.println("\"JavaScript\" is a trademark of Oracle Corporation in the United States. It is used under license for technology invented and implemented by Netscape Communications and other parties. ");
-            fail();
+            wrong_answer();
         }
     }
     public void q5() {
-        System.out.println("⊱ ──────────── {.⋅ ✯ ⋅.} ──────────── ⊰");
-        System.out.println("What is the other well known name of JavaScript?");
-        System.out.println("⊱ ──────────── {⋅. ✯ .⋅} ──────────── ⊰");
+        System.out.println("⊱ ────────────────────── {.⋅ ✯ ⋅.} ────────────────────── ⊰");
+        System.out.println("\t What is the other well known name of JavaScript?");
+        System.out.println("⊱ ────────────────────── {⋅. ✯ .⋅} ────────────────────── ⊰");
         System.out.print("╰┈➤");
         String answer = scan.nextLine();
         answer = answer.toLowerCase();
         if(answer.contains("livescript")){
             scores++;
-            pass();
+            correct_answer();
         }
         else {
             System.out.println("""
@@ -150,11 +148,11 @@ public class Level3 {
                     But as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all.
 
                     """);
-            fail();
+            wrong_answer();
         }
     }
 
-    public void fail() {
+    public void wrong_answer() {
         Scanner scan = new Scanner(System.in);
         System.out.println("You have answered it incorrectly");
         System.out.println("Press Enter Key to Continue");
@@ -162,7 +160,7 @@ public class Level3 {
         decider();
     }
 
-    public void pass() {
+    public void correct_answer() {
         Scanner scan = new Scanner(System.in);
         System.out.println("You have answered it correctly");
         System.out.println("Press Enter Key to Continue");
