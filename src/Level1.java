@@ -7,9 +7,14 @@ public class Level1 {
 
     Scanner scan = new Scanner(System.in);
     int scores;
+
+    //randomizer is very needed for the randomizing method of the question.
     String[] randomizer = {"q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"};
+
+    //Create a Array List. The Array List will still be. The Array List will be called "list"
     ArrayList<String> list= new ArrayList<>();
 
+    //level1() will ask your name and show your name too. After that it level 1 quiz will begin and run decider()
     public Level1() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm");
         LocalDateTime now = LocalDateTime.now();
@@ -33,14 +38,30 @@ public class Level1 {
         decider();
     }
 
+    /*
+    * This is where the code becomes tricky because this class is the one who randomize the question,
+    * check the question if its already been asked, check if all the question has been ask.
+    * if the question has been ask it will go to the level2 file and run the Level2()
+    * */
     public void decider() {
+        //this is where it will check if how many strings are in the Array List called "list". If list has 10 level 2 begins.
         if(list.size() == 10){
             Level2 lvl2 = new Level2();
             lvl2.Level2(scores);
         } else {
+            //This is the randomizer of the question where it will loop 11 times the randomizing method
             for(int i = 0; i <= 10; i = i + 1) {
+                /*
+                * This is where the string in the randomizer will be pick randomly.
+                * math.random() = gives your a random number between 0-1
+                * randomizer.length = gives you the number of how many strings are in that array.
+                * math.floor = round off the decimal just in case.
+                 */
                 String randomize= randomizer[(int) Math.floor(Math.random() * randomizer.length)];
+
+                //it will check in the "list" if the string question is in. If not it will ask it to the participant.
                 if(!list.contains(randomize)) {
+                    //the string question will be added to the "list" so that it will not be asked again.
                     list.add(randomize);
                     switch (randomize) {
                         case "q1" -> q1();
@@ -59,6 +80,7 @@ public class Level1 {
         }
     }
 
+    //q1()-q10() is basically the questions and answer. If the answer is correct it will go to the correct_answer() and if its wrong it will go to the wrong_answer()
     public void q1() {
         System.out.println("What is javascript mostly used for?\n");
         System.out.println("⊱ ───────────────── {.⋅ ✯ ⋅.} ───────────────── ⊰");
@@ -276,6 +298,7 @@ public class Level1 {
         }
     }
 
+    //this is the path where wrong answer goes through. After saying that your answer is incorrect it will go to decide() again.
     public void wrong_answer() {
         Scanner scan = new Scanner(System.in);
         System.out.println("You have answered it incorrectly");
@@ -284,6 +307,7 @@ public class Level1 {
         decider();
     }
 
+    //this is the path where correct answer goes through. After saying that your answer is correct it will go to decide() again.
     public void correct_answer() {
         Scanner scan = new Scanner(System.in);
         System.out.println("You have answered it correctly");

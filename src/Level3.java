@@ -3,11 +3,13 @@ import java.util.Scanner;
 
 public class Level3 {
 
+    //same as the file level 1
     Scanner scan = new Scanner(System.in);
     int scores, level1score, level2score, level3score;
     String[] randomizer = {"q1", "q2", "q3", "q4", "q5"};
     ArrayList<String> list= new ArrayList<>();
 
+    //shows your previous score the level 1, level 2, and total score
     public void Level3(int level1, int level2) {
         level1score = level1;
         level2score = level2 * 10;
@@ -24,6 +26,10 @@ public class Level3 {
         decider();
     }
 
+    /*
+    * more likely the same as the level 1 file. Shows you the score level 1, level 2, level 3, and the total score.
+    * It will run Main.java and run the class called "asked_retry()".
+    */
     public void decider() {
         if(list.size() == 5){
             level3score = scores * 15;
@@ -34,8 +40,7 @@ public class Level3 {
             System.out.println("\t   Your score in Total Score is " + (level1score + level2score + level3score) + "/175");
             System.out.println("╚══════════════════ ∘◦ ❉ ◦∘ ═══════════════════╝");
             Main main = new Main();
-            main.decision();
-
+            main.ask_retry();
         } else {
             for(int i = 0; i <= 5; i = i + 1) {
                 String randomize= randomizer[(int) Math.floor(Math.random() * randomizer.length)];

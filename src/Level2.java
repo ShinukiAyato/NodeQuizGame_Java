@@ -3,11 +3,13 @@ import java.util.Scanner;
 
 public class Level2 {
 
+    //same as the file level 1.
     Scanner scan = new Scanner(System.in);
     int scores, level1score;
     String[] randomizer = {"q1", "q2", "q3", "q4", "q5"};
     ArrayList<String> list= new ArrayList<>();
 
+    //this will show you the previous score/level 1 score
     public void Level2(int level1) {
         level1score = level1 * 5;
         System.out.println("╔══════════════════ ∘◦ ☆ ◦∘ ═══════════════════╗");
@@ -21,6 +23,7 @@ public class Level2 {
         decider();
     }
 
+    //same as usual and will run the file level3.
     public void decider() {
         if(list.size() == 5){
             Level3 lvl3 = new Level3();
