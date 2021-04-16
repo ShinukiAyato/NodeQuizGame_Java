@@ -42,21 +42,11 @@ public class Level3 {
                 if(!list.contains(randomize)) {
                     list.add(randomize);
                     switch (randomize) {
-                        case "q1" -> {
-                            q1();
-                        }
-                        case "q2" -> {
-                            q2();
-                        }
-                        case "q3" -> {
-                            q3();
-                        }
-                        case "q4" -> {
-                            q4();
-                        }
-                        case "q5" -> {
-                            q5();
-                        }
+                        case "q1" -> q1();
+                        case "q2" -> q2();
+                        case "q3" -> q3();
+                        case "q4" -> q4();
+                        case "q5" -> q5();
                     }
                 }
             }

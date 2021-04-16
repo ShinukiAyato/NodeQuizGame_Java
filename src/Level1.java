@@ -43,36 +43,16 @@ public class Level1 {
                 if(!list.contains(randomize)) {
                     list.add(randomize);
                     switch (randomize) {
-                        case "q1" -> {
-                            q1();
-                        }
-                        case "q2" -> {
-                            q2();
-                        }
-                        case "q3" -> {
-                            q3();
-                        }
-                        case "q4" -> {
-                            q4();
-                        }
-                        case "q5" -> {
-                            q5();
-                        }
-                        case "q6" -> {
-                            q6();
-                        }
-                        case "q7" -> {
-                            q7();
-                        }
-                        case "q8" -> {
-                            q8();
-                        }
-                        case "q9" -> {
-                            q9();
-                        }
-                        case "q10" -> {
-                            q10();
-                        }
+                        case "q1" -> q1();
+                        case "q2" -> q2();
+                        case "q3" -> q3();
+                        case "q4" -> q4();
+                        case "q5" -> q5();
+                        case "q6" -> q6();
+                        case "q7" -> q7();
+                        case "q8" -> q8();
+                        case "q9" -> q9();
+                        case "q10" -> q10();
                     }
                 }
             }
